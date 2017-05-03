@@ -52,25 +52,29 @@ In addition to the entry file, there will be three scripts involved in this proj
 
 ### Implementation Timeline
 
-**Day 1**: Setup all necessary Node modules, including getting webpack up and running and `Easel.js` installed. Write a basic entry file and the bare bones of all 3 scripts outlined above.  Learn the basics of `Easel.js`.  Goals for the day:
+#### Day 1:
+Setup all necessary Node modules, including getting webpack up and running and `Easel.js` installed. Write a basic entry file and the bare bones of all 3 scripts outlined above.  Learn the basics of `Easel.js`.  Goals for the day:
 
 - Get a green bundle with `Browserify`
 - Learn enough `Easel.js` to render a basic start page
 
-**Day 2**: Dedicate this day to learning the `Easel.js` API.  First, build out the `Player` object to connect to the `Board` object.  Then, use `board.js` to create and render at least the player, ideally a player and enemy.  Build in the ability to move the player.  Goals for the day:
+#### Day 2:
+Dedicate this day to learning the `Easel.js` API.  First, build out the `Player` object to connect to the `Board` object.  Then, use `board.js` to create and render at least the player, ideally a player and enemy.  Build in the ability to move the player.  Goals for the day:
 
 - Complete the `player.js` module (constructor, update functions)
 - Render a player to the `Board` using `Easel.js`
 - Make the player movable with controls
 - Do the same for enemies
 
-**Day 3**: Create the enemy AI logic.  Build out 3-5 levels and various enemies unique abilities and stats.  Incorporate the automata logic into the `Board.js` rendering.  Goals for the day:
+#### Day 3:  
+Create the enemy AI logic.  Build out 3-5 levels and various enemies unique abilities and stats.  Incorporate the automata logic into the `Board.js` rendering.  Goals for the day:
 
 - Export an `Enemy` object with correct type and handling logic
 - Have a functional grid on the `Board` frontend that correctly handles the player and enemy movement and attacks
 
 
-**Day 4**: Install the controls for the user to interact with the game.  Style the frontend, making it polished and professional.  Goals for the day:
+#### Day 4:  
+Install the controls for the user to interact with the game.  Style the frontend, making it polished and professional.  Goals for the day:
 
 - Finish  controls for game
 - Have a styled `Board`, fluid controls with a nice looking title
