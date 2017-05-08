@@ -4,12 +4,13 @@
   background: url('../backgrounds/wasteland.jpg');
   background-position: bottom;
   max-height: 500px;
-  margin: auto;
+  margin: 0 auto;
 }
 .canvasContainer {
   height: 100%;
   display: flex;
   overflow: hidden;
+  user-select: none;
 }
 body {
   height: 100vh;
@@ -20,3 +21,90 @@ body {
   background: url('../backgrounds/congruent.png');
   background-color: darkgrey;
 }
+
+.main-modal{
+  /*position: absolute;
+  z-index: 10;
+  border-radius: 4px;*/
+}
+.active{
+  /*display: block;*/
+}
+
+.modal-backdrop {
+  /*position: fixed;
+  z-index: 5;
+  background: rgba(0, 0, 0, 0.75);*/
+  }
+
+  .info-bar {
+    display: flex;
+    justify-content: flex-end;
+    width: 1200px;
+    margin: auto;
+    margin-bottom: 5px;
+  }
+
+
+
+  .icons {
+    cursor: default;
+  }
+
+	ul.icons li {
+		display: inline-block;
+		line-height: 1em;
+		padding-left: 0.25em;
+	}
+
+  .icon {
+		text-decoration: none;
+		position: relative;
+    font-family: FontAwesome;
+    font-style: normal;
+	}
+
+	.icon.circle {
+		transition: all 0.2s ease-in-out;
+		border-radius: 100%;
+		display: inline-block;
+		height: 2.25em;
+		left: 0;
+		line-height: 2.25em;
+		text-align: center;
+		text-decoration: none;
+		top: 0;
+		width: 2.25em;
+	}
+
+	.icon.circle:hover {
+		top: -0.2em;
+	}
+
+	.fa-github {
+		background: #dcad8b;
+		color: #fff;
+	}
+
+	.fa-github:hover {
+		background: #e1b89b;
+		background: #F1C5A9;
+	}
+
+	.fa-linkedin {
+		background: #0077B5;
+		color: #fff;
+	}
+
+	.fa-linkedin:hover {
+    background: #0087CF;
+	}
+
+  .app-title{
+    font-family: 'Bangers', cursive;
+    color: white;
+    font-size: 48px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
