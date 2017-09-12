@@ -37,15 +37,13 @@ body {
   background: rgba(0, 0, 0, 0.75);*/
   }
 
-  .info-bar {
-    display: flex;
-    justify-content: flex-end;
-    width: 1200px;
-    margin: auto;
-    margin-bottom: 5px;
-  }
-
-
+.info-bar {
+  display: flex;
+  justify-content: flex-end;
+  width: 1200px;
+  margin: auto;
+  margin-bottom: 5px;
+}
 
   .icons {
     cursor: default;
@@ -100,11 +98,16 @@ body {
     background: #0087CF;
 	}
 
-  .app-title{
+  .app-title {
     font-family: 'Bangers', cursive;
     color: white;
     font-size: 48px;
     text-align: center;
     display: flex;
     align-items: center;
+  }
+
+  .instructions {
+    display: flex;
+    flex-direction: column;
   }
