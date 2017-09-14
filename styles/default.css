@@ -28,7 +28,8 @@ body {
   border-radius: 4px;*/
 }
 .active{
-  /*display: block;*/
+  display: none;
+
 }
 
 .modal-backdrop {
@@ -43,6 +44,7 @@ body {
   width: 1200px;
   margin: auto;
   margin-bottom: 5px;
+  user-select: none;
 }
 
   .icons {
@@ -105,6 +107,7 @@ body {
     text-align: center;
     display: flex;
     align-items: center;
+    user-select: none;
   }
 
   .instructions {
@@ -113,4 +116,5 @@ body {
     color: white;
     font-family: 'Roboto', cursive;
     font-size: 26px;
+    user-select: none;
   }
