@@ -7,7 +7,7 @@
   margin: 0 auto;
 }
 .canvasContainer {
-  height: 100%;
+
   display: flex;
   overflow: hidden;
   user-select: none;
@@ -110,4 +110,7 @@ body {
   .instructions {
     display: flex;
     flex-direction: column;
+    color: white;
+    font-family: 'Roboto', cursive;
+    font-size: 26px;
   }
