@@ -6,31 +6,90 @@
   height: 500px;
   margin: 0 auto;
 }
-.canvasContainer {
 
+.modal {
+  height: 500px;
+  width: 1200px;
+  position: absolute;
+  margin: 0px calc((100% - 1200px) / 2);
+  border-radius: 5px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, .75);
+}
+
+.canvasContainer {
   display: flex;
   overflow: hidden;
   user-select: none;
+  z-index: 1;
 }
+
+.start-btn {
+  width: 200px;
+  height: 50px;
+  background: red;
+}
+
+.start_window {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid yellow;
+  height: 100%;
+}
+
+.open_screen {
+
+}
+
 body {
   height: 100vh;
   /*background: url('../backgrounds/tile.png');*/
-  /*background: url('../backgrounds/pow-star.png');*/
-  /*background: url('../backgrounds/topography.png');*/
-  /*background: url('../backgrounds/black-mamba.png');*/
   background: url('../backgrounds/congruent.png');
   background-color: darkgrey;
 }
 
 .main-modal{
-  /*position: absolute;
   z-index: 10;
-  border-radius: 4px;*/
+  position: absolute;
+  border-radius: 4px;
+  background: red;
+  /*height: 100vh;*/
+  width: 100vw;
 }
+
 .active{
   display: none;
 
 }
+
+.info_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-title {
+  font-family: 'Bangers', cursive;
+  color: white;
+  font-size: 48px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  user-select: none;
+
+}
+.instructions {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: 'Roboto', cursive;
+  font-size: 26px;
+  user-select: none;
+}
+
+.
 
 .modal-backdrop {
   /*position: fixed;
@@ -47,74 +106,56 @@ body {
   user-select: none;
 }
 
-  .icons {
-    cursor: default;
-  }
+/* CONTACT ICONS */
+.icons {
+  cursor: default;
+}
 
-	ul.icons li {
-		display: inline-block;
-		line-height: 1em;
-		padding-left: 0.25em;
-	}
+ul.icons li {
+	display: inline-block;
+	line-height: 1em;
+	padding-left: 0.25em;
+}
 
-  .icon {
-		text-decoration: none;
-		position: relative;
-    font-family: FontAwesome;
-    font-style: normal;
-	}
+.icon {
+	text-decoration: none;
+	position: relative;
+  font-family: FontAwesome;
+  font-style: normal;
+}
 
-	.icon.circle {
-		transition: all 0.2s ease-in-out;
-		border-radius: 100%;
-		display: inline-block;
-		height: 2.25em;
-		left: 0;
-		line-height: 2.25em;
-		text-align: center;
-		text-decoration: none;
-		top: 0;
-		width: 2.25em;
-	}
+.icon.circle {
+	transition: all 0.2s ease-in-out;
+	border-radius: 100%;
+	display: inline-block;
+	height: 2.25em;
+	left: 0;
+	line-height: 2.25em;
+	text-align: center;
+	text-decoration: none;
+	top: 0;
+	width: 2.25em;
+}
 
-	.icon.circle:hover {
-		top: -0.2em;
-	}
+.icon.circle:hover {
+	top: -0.2em;
+}
 
-	.fa-github {
-		background: #dcad8b;
-		color: #fff;
-	}
+.fa-github {
+	background: #dcad8b;
+	color: #fff;
+}
 
-	.fa-github:hover {
-		background: #e1b89b;
-		background: #F1C5A9;
-	}
+.fa-github:hover {
+	background: #e1b89b;
+	background: #F1C5A9;
+}
 
-	.fa-linkedin {
-		background: #0077B5;
-		color: #fff;
-	}
+.fa-linkedin {
+	background: #0077B5;
+	color: #fff;
+}
 
-	.fa-linkedin:hover {
-    background: #0087CF;
-	}
-
-  .app-title {
-    font-family: 'Bangers', cursive;
-    color: white;
-    font-size: 48px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    user-select: none;
-  }
-
-  .instructions {
-    display: flex;
-    flex-direction: column;
-    color: white;
-    font-family: 'Roboto', cursive;
-    font-size: 26px;
-    user-select: none;
-  }
+.fa-linkedin:hover {
+  background: #0087CF;
+}
