@@ -1,3 +1,11 @@
+body {
+  height: 100vh;
+  /*background: url('../backgrounds/tile.png');*/
+  background: url('../backgrounds/congruent.png');
+  background-color: darkgrey;
+  cursor: default;
+}
+
 #canvas {
   border: 1px solid black;
   border-radius: 5px;
@@ -11,10 +19,11 @@
   height: 500px;
   width: 1200px;
   position: absolute;
-  margin: 0px calc((100% - 1200px) / 2);
+  margin: 0 calc((100% - 1200px) / 2);
   border-radius: 5px;
-  left: 0px;
-  background-color: rgba(0, 0, 0, .75);
+  left: 0;
+  background-color: rgba(0, 0, 0, .3);
+  z-index: 1;
 }
 
 .canvasContainer {
@@ -27,15 +36,33 @@
 .start-btn {
   width: 200px;
   height: 50px;
-  background: red;
-}
-
-.start_window {
+  background: #FF0000;
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
+  font-size: 52px;
+  border: 1px solid rgba(0, 0, 0, .4);
+  border-radius: 10px;
+  box-shadow: 0 2 5 rgba(0, 0, 0, .4);
+  cursor: pointer;
+}
+
+.start_text {
+  cursor: pointer;
+}
+
+.game_title {
+  font-size: 120px;
+  font-family: 'Bangers', cursive;
+  color: white;
+  text-shadow: -5px 4px 0 #000;
+}
+.start_window {
+  display: flex;
+  align-items: center;
   flex-direction: column;
-  border: 1px solid yellow;
   height: 100%;
 }
 
@@ -43,19 +70,13 @@
 
 }
 
-body {
-  height: 100vh;
-  /*background: url('../backgrounds/tile.png');*/
-  background: url('../backgrounds/congruent.png');
-  background-color: darkgrey;
-}
+
 
 .main-modal{
   z-index: 10;
   position: absolute;
   border-radius: 4px;
   background: red;
-  /*height: 100vh;*/
   width: 100vw;
 }
 
@@ -89,7 +110,6 @@ body {
   user-select: none;
 }
 
-.
 
 .modal-backdrop {
   /*position: fixed;
