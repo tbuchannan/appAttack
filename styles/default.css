@@ -24,6 +24,10 @@ body {
   left: 0;
   background-color: rgba(0, 0, 0, .3);
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
 }
 
 .canvasContainer {
@@ -33,9 +37,8 @@ body {
   z-index: 1;
 }
 
-.start-btn {
-  width: 200px;
-  height: 50px;
+.start-btn, .continue_btn {
+  padding: 0 10px;
   background: #FF0000;
   z-index: 2;
   display: flex;
@@ -53,18 +56,21 @@ body {
   cursor: pointer;
 }
 
-.game_title {
+.game_title, .game_over_title {
   font-size: 120px;
   font-family: 'Bangers', cursive;
   color: white;
   text-shadow: -5px 4px 0 #000;
 }
-.start_window {
+.start_window, .game_over_window {
   display: flex;
   align-items: center;
   flex-direction: column;
   height: 100%;
+  position: absolute;
+  align-self: center;
 }
+
 
 .open_screen {
 
@@ -76,6 +82,9 @@ body {
   transition: visibility .25s, opacity .25s linear;
 }
 
+.game_over{
+  /*flex-direction: column-reverse;*/
+}
 
 
 .main-modal{
